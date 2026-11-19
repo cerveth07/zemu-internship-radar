@@ -1,0 +1,160 @@
+{
+  "$defs": {
+    "Finding": {
+      "properties": {
+        "assessments": {
+          "items": {
+            "$ref": "#/$defs/RequirementAssessment"
+          },
+          "maxItems": 100,
+          "title": "Assessments",
+          "type": "array"
+        },
+        "content": {
+          "maxLength": 5000,
+          "minLength": 1,
+          "title": "Content",
+          "type": "string"
+        },
+        "job_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 40,
+          "title": "Job Ids",
+          "type": "array"
+        },
+        "kind": {
+          "enum": [
+            "skill_gap",
+            "learning_task",
+            "job_assessment",
+            "career_strategy",
+            "other"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "personal_evidence_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 100,
+          "title": "Personal Evidence Ids",
+          "type": "array"
+        },
+        "priority": {
+          "default": "medium",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Priority",
+          "type": "string"
+        },
+        "related_skill": {
+          "default": "",
+          "maxLength": 120,
+          "title": "Related Skill",
+          "type": "string"
+        },
+        "requirement_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 100,
+          "title": "Requirement Ids",
+          "type": "array"
+        },
+        "title": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "title",
+        "content"
+      ],
+      "title": "Finding",
+      "type": "object"
+    },
+    "RequirementAssessment": {
+      "additionalProperties": false,
+      "properties": {
+        "explanation": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Explanation",
+          "type": "string"
+        },
+        "judgment": {
+          "enum": [
+            "direct",
+            "transferable",
+            "not_documented",
+            "gap",
+            "needs_check"
+          ],
+          "title": "Judgment",
+          "type": "string"
+        },
+        "next_action": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Next Action",
+          "type": "string"
+        },
+        "personal_evidence_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 100,
+          "title": "Personal Evidence Ids",
+          "type": "array"
+        },
+        "requirement_id": {
+          "exclusiveMinimum": 0,
+          "title": "Requirement Id",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "requirement_id",
+        "judgment",
+        "explanation",
+        "next_action"
+      ],
+      "title": "RequirementAssessment",
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/cerveth07/ai-internship-radar/docs/agent/schemas/findings-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "maxItems": 100,
+      "minItems": 1,
+      "title": "Findings",
+      "type": "array"
+    },
+    "package_id": {
+      "maxLength": 36,
+      "minLength": 36,
+      "title": "Package Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "package_id",
+    "findings"
+  ],
+  "title": "AnalysisImport",
+  "type": "object"
+}

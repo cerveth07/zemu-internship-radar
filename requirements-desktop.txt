@@ -1,0 +1,4 @@
+-r requirements.txt
+pywebview>=6.0,<7
+pyinstaller>=6.12,<7
+-r requirements-ocr.txt

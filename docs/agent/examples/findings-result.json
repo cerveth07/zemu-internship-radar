@@ -1,0 +1,21 @@
+{
+  "package_id": "00000000-0000-4000-8000-000000000001",
+  "findings": [
+    {
+      "kind": "skill_gap",
+      "title": "补一个可复现的 RAG 小项目",
+      "content": "虚构样例。练习岗位要求制作检索演示，练习材料只包含一份课程说明。",
+      "job_ids": [
+        1
+      ],
+      "requirement_ids": [
+        1
+      ],
+      "personal_evidence_ids": [
+        1
+      ],
+      "related_skill": "RAG",
+      "priority": "high"
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "key": "synthetic-employers-v1",
+  "name": "合成企业示例名单",
+  "publisher": "项目合成样例",
+  "source_url": "",
+  "report_url": "",
+  "published_on": "2026-11-18",
+  "description": "100 家虚构企业，用于演示名单筛选。",
+  "order_note": "按样例编号排列。名称、业务与岗位均为虚构。",
+  "entries": [
+    {
+      "position": 1,
+      "company_name": "合成样例一号有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目001",
+      "region": "北京"
+    },
+    {
+      "position": 2,
+      "company_name": "合成样例二号有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目002",
+      "region": "上海"
+    },
+    {
+      "position": 3,
+      "company_name": "合成样例三号有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目003",
+      "region": "杭州"
+    },
+    {
+      "position": 4,
+      "company_name": "合成样例四号有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目004",
+      "region": "北京"
+    },
+    {
+      "position": 5,
+      "company_name": "虚构青穹数据有限公司",
+      "aliases": [],
+      "business_brands": "青穹实验室",
+      "region": "上海"
+    },
+    {
+      "position": 6,
+      "company_name": "合成星桥公司",
+      "aliases": [],
+      "business_brands": "虚构项目006",
+      "region": "杭州"
+    },
+    {
+      "position": 7,
+      "company_name": "合成样例企业007有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目007",
+      "region": "北京"
+    },
+    {
+      "position": 8,
+      "company_name": "合成样例企业008有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目008",
+      "region": "上海"
+    },
+    {
+      "position": 9,
+      "company_name": "合成样例企业009有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目009",
+      "region": "杭州"
+    },
+    {
+      "position": 10,
+      "company_name": "合成样例企业010有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目010",
+      "region": "北京"
+    },
+    {
+      "position": 11,
+      "company_name": "合成样例企业011有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目011",
+      "region": "上海"
+    },
+    {
+      "position": 12,
+      "company_name": "合成样例企业012有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目012",
+      "region": "杭州"
+    },
+    {
+      "position": 13,
+      "company_name": "合成样例企业013有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目013",
+      "region": "北京"
+    },
+    {
+      "position": 14,
+      "company_name": "合成样例企业014有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目014",
+      "region": "上海"
+    },
+    {
+      "position": 15,
+      "company_name": "合成样例企业015有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目015",
+      "region": "杭州"
+    },
+    {
+      "position": 16,
+      "company_name": "合成样例企业016有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目016",
+      "region": "北京"
+    },
+    {
+      "position": 17,
+      "company_name": "合成样例企业017有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目017",
+      "region": "上海"
+    },
+    {
+      "position": 18,
+      "company_name": "合成样例企业018有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目018",
+      "region": "杭州"
+    },
+    {
+      "position": 19,
+      "company_name": "合成样例企业019有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目019",
+      "region": "北京"
+    },
+    {
+      "position": 20,
+      "company_name": "合成样例企业020有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目020",
+      "region": "上海"
+    },
+    {
+      "position": 21,
+      "company_name": "合成样例企业021有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目021",
+      "region": "杭州"
+    },
+    {
+      "position": 22,
+      "company_name": "合成样例企业022有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目022",
+      "region": "北京"
+    },
+    {
+      "position": 23,
+      "company_name": "合成样例企业023有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目023",
+      "region": "上海"
+    },
+    {
+      "position": 24,
+      "company_name": "合成样例企业024有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目024",
+      "region": "杭州"
+    },
+    {
+      "position": 25,
+      "company_name": "合成样例企业025有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目025",
+      "region": "北京"
+    },
+    {
+      "position": 26,
+      "company_name": "合成样例企业026有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目026",
+      "region": "上海"
+    },
+    {
+      "position": 27,
+      "company_name": "合成样例企业027有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目027",
+      "region": "杭州"
+    },
+    {
+      "position": 28,
+      "company_name": "合成样例企业028有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目028",
+      "region": "北京"
+    },
+    {
+      "position": 29,
+      "company_name": "合成样例企业029有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目029",
+      "region": "上海"
+    },
+    {
+      "position": 30,
+      "company_name": "合成样例企业030有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目030",
+      "region": "杭州"
+    },
+    {
+      "position": 31,
+      "company_name": "合成样例企业031有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目031",
+      "region": "北京"
+    },
+    {
+      "position": 32,
+      "company_name": "合成样例企业032有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目032",
+      "region": "上海"
+    },
+    {
+      "position": 33,
+      "company_name": "合成样例企业033有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目033",
+      "region": "杭州"
+    },
+    {
+      "position": 34,
+      "company_name": "合成样例企业034有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目034",
+      "region": "北京"
+    },
+    {
+      "position": 35,
+      "company_name": "合成样例企业035有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目035",
+      "region": "上海"
+    },
+    {
+      "position": 36,
+      "company_name": "合成样例企业036有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目036",
+      "region": "杭州"
+    },
+    {
+      "position": 37,
+      "company_name": "合成样例企业037有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目037",
+      "region": "北京"
+    },
+    {
+      "position": 38,
+      "company_name": "合成样例企业038有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目038",
+      "region": "上海"
+    },
+    {
+      "position": 39,
+      "company_name": "合成样例企业039有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目039",
+      "region": "杭州"
+    },
+    {
+      "position": 40,
+      "company_name": "合成样例企业040有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目040",
+      "region": "北京"
+    },
+    {
+      "position": 41,
+      "company_name": "合成样例企业041有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目041",
+      "region": "上海"
+    },
+    {
+      "position": 42,
+      "company_name": "合成样例企业042有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目042",
+      "region": "杭州"
+    },
+    {
+      "position": 43,
+      "company_name": "合成样例企业043有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目043",
+      "region": "北京"
+    },
+    {
+      "position": 44,
+      "company_name": "合成样例企业044有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目044",
+      "region": "上海"
+    },
+    {
+      "position": 45,
+      "company_name": "合成样例企业045有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目045",
+      "region": "杭州"
+    },
+    {
+      "position": 46,
+      "company_name": "合成样例企业046有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目046",
+      "region": "北京"
+    },
+    {
+      "position": 47,
+      "company_name": "合成样例企业047有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目047",
+      "region": "上海"
+    },
+    {
+      "position": 48,
+      "company_name": "合成样例企业048有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目048",
+      "region": "杭州"
+    },
+    {
+      "position": 49,
+      "company_name": "合成样例企业049有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目049",
+      "region": "北京"
+    },
+    {
+      "position": 50,
+      "company_name": "合成样例企业050有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目050",
+      "region": "上海"
+    },
+    {
+      "position": 51,
+      "company_name": "合成样例企业051有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目051",
+      "region": "杭州"
+    },
+    {
+      "position": 52,
+      "company_name": "合成样例企业052有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目052",
+      "region": "北京"
+    },
+    {
+      "position": 53,
+      "company_name": "合成样例企业053有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目053",
+      "region": "上海"
+    },
+    {
+      "position": 54,
+      "company_name": "合成样例企业054有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目054",
+      "region": "杭州"
+    },
+    {
+      "position": 55,
+      "company_name": "合成样例企业055有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目055",
+      "region": "北京"
+    },
+    {
+      "position": 56,
+      "company_name": "合成样例企业056有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目056",
+      "region": "上海"
+    },
+    {
+      "position": 57,
+      "company_name": "合成样例企业057有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目057",
+      "region": "杭州"
+    },
+    {
+      "position": 58,
+      "company_name": "合成样例企业058有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目058",
+      "region": "北京"
+    },
+    {
+      "position": 59,
+      "company_name": "合成样例企业059有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目059",
+      "region": "上海"
+    },
+    {
+      "position": 60,
+      "company_name": "合成样例企业060有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目060",
+      "region": "杭州"
+    },
+    {
+      "position": 61,
+      "company_name": "合成样例企业061有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目061",
+      "region": "北京"
+    },
+    {
+      "position": 62,
+      "company_name": "合成样例企业062有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目062",
+      "region": "上海"
+    },
+    {
+      "position": 63,
+      "company_name": "合成样例企业063有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目063",
+      "region": "杭州"
+    },
+    {
+      "position": 64,
+      "company_name": "合成样例企业064有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目064",
+      "region": "北京"
+    },
+    {
+      "position": 65,
+      "company_name": "合成样例企业065有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目065",
+      "region": "上海"
+    },
+    {
+      "position": 66,
+      "company_name": "合成样例企业066有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目066",
+      "region": "杭州"
+    },
+    {
+      "position": 67,
+      "company_name": "合成样例企业067有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目067",
+      "region": "北京"
+    },
+    {
+      "position": 68,
+      "company_name": "合成样例企业068有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目068",
+      "region": "上海"
+    },
+    {
+      "position": 69,
+      "company_name": "合成样例企业069有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目069",
+      "region": "杭州"
+    },
+    {
+      "position": 70,
+      "company_name": "合成样例企业070有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目070",
+      "region": "北京"
+    },
+    {
+      "position": 71,
+      "company_name": "合成样例企业071有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目071",
+      "region": "上海"
+    },
+    {
+      "position": 72,
+      "company_name": "合成样例企业072有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目072",
+      "region": "杭州"
+    },
+    {
+      "position": 73,
+      "company_name": "合成样例企业073有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目073",
+      "region": "北京"
+    },
+    {
+      "position": 74,
+      "company_name": "合成样例企业074有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目074",
+      "region": "上海"
+    },
+    {
+      "position": 75,
+      "company_name": "合成样例企业075有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目075",
+      "region": "杭州"
+    },
+    {
+      "position": 76,
+      "company_name": "合成样例企业076有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目076",
+      "region": "北京"
+    },
+    {
+      "position": 77,
+      "company_name": "合成样例企业077有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目077",
+      "region": "上海"
+    },
+    {
+      "position": 78,
+      "company_name": "合成样例企业078有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目078",
+      "region": "杭州"
+    },
+    {
+      "position": 79,
+      "company_name": "合成样例企业079有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目079",
+      "region": "北京"
+    },
+    {
+      "position": 80,
+      "company_name": "合成样例企业080有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目080",
+      "region": "上海"
+    },
+    {
+      "position": 81,
+      "company_name": "合成样例企业081有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目081",
+      "region": "杭州"
+    },
+    {
+      "position": 82,
+      "company_name": "合成样例企业082有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目082",
+      "region": "北京"
+    },
+    {
+      "position": 83,
+      "company_name": "合成样例企业083有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目083",
+      "region": "上海"
+    },
+    {
+      "position": 84,
+      "company_name": "合成样例企业084有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目084",
+      "region": "杭州"
+    },
+    {
+      "position": 85,
+      "company_name": "合成样例企业085有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目085",
+      "region": "北京"
+    },
+    {
+      "position": 86,
+      "company_name": "合成样例企业086有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目086",
+      "region": "上海"
+    },
+    {
+      "position": 87,
+      "company_name": "合成样例企业087有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目087",
+      "region": "杭州"
+    },
+    {
+      "position": 88,
+      "company_name": "合成样例企业088有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目088",
+      "region": "北京"
+    },
+    {
+      "position": 89,
+      "company_name": "合成样例企业089有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目089",
+      "region": "上海"
+    },
+    {
+      "position": 90,
+      "company_name": "合成样例企业090有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目090",
+      "region": "杭州"
+    },
+    {
+      "position": 91,
+      "company_name": "合成样例企业091有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目091",
+      "region": "北京"
+    },
+    {
+      "position": 92,
+      "company_name": "合成样例企业092有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目092",
+      "region": "上海"
+    },
+    {
+      "position": 93,
+      "company_name": "合成样例企业093有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目093",
+      "region": "杭州"
+    },
+    {
+      "position": 94,
+      "company_name": "合成样例企业094有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目094",
+      "region": "北京"
+    },
+    {
+      "position": 95,
+      "company_name": "合成样例企业095有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目095",
+      "region": "上海"
+    },
+    {
+      "position": 96,
+      "company_name": "合成样例企业096有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目096",
+      "region": "杭州"
+    },
+    {
+      "position": 97,
+      "company_name": "合成样例企业097有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目097",
+      "region": "北京"
+    },
+    {
+      "position": 98,
+      "company_name": "合成样例企业098有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目098",
+      "region": "上海"
+    },
+    {
+      "position": 99,
+      "company_name": "合成样例企业099有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目099",
+      "region": "杭州"
+    },
+    {
+      "position": 100,
+      "company_name": "合成样例百号有限公司",
+      "aliases": [],
+      "business_brands": "虚构项目100",
+      "region": "北京"
+    }
+  ]
+}

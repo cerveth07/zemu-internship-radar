@@ -1,0 +1,133 @@
+{
+  "$defs": {
+    "ExceptionDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "reason": {
+          "default": "",
+          "maxLength": 1000,
+          "title": "Reason",
+          "type": "string"
+        },
+        "requirement_id": {
+          "exclusiveMinimum": 0,
+          "title": "Requirement Id",
+          "type": "integer"
+        },
+        "verdict": {
+          "enum": [
+            "verified",
+            "excluded",
+            "uncertain"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        }
+      },
+      "required": [
+        "requirement_id",
+        "verdict"
+      ],
+      "title": "ExceptionDecision",
+      "type": "object"
+    },
+    "GroupDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "exceptions": {
+          "items": {
+            "$ref": "#/$defs/ExceptionDecision"
+          },
+          "maxItems": 150,
+          "title": "Exceptions",
+          "type": "array"
+        },
+        "group_id": {
+          "title": "Group Id",
+          "type": "string"
+        },
+        "normalized_name": {
+          "default": "",
+          "maxLength": 160,
+          "title": "Normalized Name",
+          "type": "string"
+        },
+        "reason": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Reason",
+          "type": "string"
+        },
+        "reviewed_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 150,
+          "minItems": 1,
+          "title": "Reviewed Ids",
+          "type": "array"
+        },
+        "verdict": {
+          "enum": [
+            "verified",
+            "excluded",
+            "uncertain"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        }
+      },
+      "required": [
+        "group_id",
+        "reviewed_ids",
+        "verdict",
+        "reason"
+      ],
+      "title": "GroupDecision",
+      "type": "object"
+    },
+    "ReviewImport": {
+      "additionalProperties": false,
+      "properties": {
+        "batch_id": {
+          "title": "Batch Id",
+          "type": "string"
+        },
+        "decisions": {
+          "items": {
+            "$ref": "#/$defs/GroupDecision"
+          },
+          "maxItems": 150,
+          "minItems": 1,
+          "title": "Decisions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "batch_id",
+        "decisions"
+      ],
+      "title": "ReviewImport",
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/cerveth07/ai-internship-radar/docs/agent/schemas/review-bulk-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "results": {
+      "items": {
+        "$ref": "#/$defs/ReviewImport"
+      },
+      "maxItems": 100,
+      "minItems": 1,
+      "title": "Results",
+      "type": "array"
+    }
+  },
+  "required": [
+    "results"
+  ],
+  "title": "BulkReviewImport",
+  "type": "object"
+}

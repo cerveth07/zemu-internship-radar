@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#f5f3ef"/>
+  <title>择木 · 实习工作台</title>
+  <link rel="icon" type="image/png" href="/static/brand-mark.png"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+<link rel="stylesheet" href="/static/export-manager.css">
+<link rel="stylesheet" href="/static/analysis-workflows.css">
+<link rel="stylesheet" href="/static/skill-gap.css">
+<link rel="stylesheet" href="/static/task-actions.css">
+<link rel="stylesheet" href="/static/listing-pagination.css">
+<link rel="stylesheet" href="/static/home-search.css">
+  <link rel="stylesheet" href="/static/company-lists.css">
+  <link rel="stylesheet" href="/static/boss-favorites.css">
+  <link rel="stylesheet" href="/static/theme-dark.css">
+  <script src="/static/theme.js" data-theme-boot></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-overview" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-inbox" viewBox="0 0 24 24"><path d="m3 13 3-9h12l3 9v7H3zM3 13h5l2 3h4l2-3h5"/></symbol>
+    <symbol id="i-jobs" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V3h8v4M3 12l9 3 9-3M12 12v5"/></symbol>
+    <symbol id="i-company" viewBox="0 0 24 24"><path d="M4 21V3h12v18M16 9h4v12M2 21h20M8 7h4M8 11h4M8 15h4M8 21v-3h4v3"/></symbol>
+    <symbol id="i-analysis" viewBox="0 0 24 24"><path d="M4 4h16v12H9l-5 4zM8 8h8M8 12h5"/></symbol>
+    <symbol id="i-skills" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+    <symbol id="i-evidence" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8zM14 3v5h5M8 14l2 2 5-5"/></symbol>
+    <symbol id="i-learning" viewBox="0 0 24 24"><path d="M3 4h5c2 0 4 1 4 3v14c0-2-2-3-4-3H3zM21 4h-5c-2 0-4 1-4 3v14c0-2 2-3 4-3h5z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m3 3 18 9-18 9 4-9zM7 12h14"/></symbol>
+    <symbol id="i-review" viewBox="0 0 24 24"><rect x="7" y="7" width="14" height="14" rx="2"/><path d="M17 7V3H3v14h4M11 14l2 2 4-4"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v7c0 4 18 4 18 0V5M3 12v7c0 4 18 4 18 0v-7"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/></symbol>
+    <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5a4.5 4.5 0 1 0 4.5 4.5M12 12l6.4-6.4"/><circle cx="12" cy="12" r="1.2"/></symbol>
+  </svg>
+  <a class="skip-link" href="#content">跳转到内容</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="工作区导航">
+      <div class="brand"><img class="brand-mark" src="/static/brand-mark.png" alt="" width="36" height="36"><div><strong>择木</strong><small>实习工作台</small></div></div>
+      <nav id="nav" aria-label="功能页面">
+        <button class="nav-item active" data-page="overview" aria-current="page"><svg class="icon"><use href="#i-overview"/></svg><span class="nav-text">工作台</span></button>
+        <div class="side-label">收集与整理</div>
+        <button class="nav-item" data-page="capture"><svg class="icon"><use href="#i-inbox"/></svg><span class="nav-text">采集收件箱</span><span class="nav-count" id="nav-capture-count" hidden></span></button>
+        <button class="nav-item" data-page="jobs"><svg class="icon"><use href="#i-jobs"/></svg><span class="nav-text">岗位库</span><span class="nav-count" id="nav-jobs-count">0</span></button>
+        <button class="nav-item" data-page="companies"><svg class="icon"><use href="#i-company"/></svg><span class="nav-text">企业观察库</span></button>
+        <div class="side-label">分析与准备</div>
+        <button class="nav-item" data-page="analysis"><svg class="icon"><use href="#i-analysis"/></svg><span class="nav-text">AI 分析</span></button>
+        <button class="nav-item" data-page="skills"><svg class="icon"><use href="#i-skills"/></svg><span class="nav-text">能力准备</span></button>
+        <button class="nav-item nav-section-start" data-page="applications"><svg class="icon"><use href="#i-send"/></svg><span class="nav-text">投递追踪</span></button>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="nav-item theme-toggle" id="theme-toggle" type="button"><svg class="icon"><use href="#i-theme"/></svg><span class="nav-text">外观 · 跟随系统</span></button>
+        <button class="nav-item" data-page="sources"><svg class="icon"><use href="#i-data"/></svg><span class="nav-text">数据与帮助</span></button>
+        <div class="side-bottom"><span class="status-dot"></span><span>本地工作空间</span><span class="version">v1.0</span><p>记录与资料保存在这台电脑</p></div>
+      </div>
+    </aside>
+    <button class="sidebar-scrim" id="sidebar-scrim" aria-label="收起导航" tabindex="-1"></button>
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-location"><button class="icon-button nav-toggle" id="nav-toggle" aria-label="展开导航" aria-controls="sidebar" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button><div class="breadcrumb">工作空间 <span>/</span> <strong id="breadcrumb">工作台</strong></div></div>
+        <div class="top-actions">
+          <form class="global-search" id="global-search-form" role="search"><svg class="icon"><use href="#i-search"/></svg><input id="global-search" type="search" placeholder="搜索岗位、企业或 JD" aria-label="搜索岗位、企业或职位说明"/><kbd>Ctrl K</kbd></form>
+          <button class="btn" type="button" data-gpt-choose title="选择 AI 助手返回的 JSON 或 ZIP：JD 要求提取、要求复核、求职分析结论或岗位优先级。自动识别类型，先预览再保存。">导入 AI 结果</button>
+          <button class="btn btn-primary" id="top-add-job"><svg class="icon"><use href="#i-plus"/></svg>添加岗位</button>
+        </div>
+      </header>
+      <div class="page-content" id="content" tabindex="-1"><div class="loading" role="status">正在加载本地工作空间…</div></div>
+    </main>
+  </div>
+  <dialog class="modal-backdrop hidden" id="modal" aria-labelledby="modal-title"><div class="modal"><div class="modal-header"><h2 id="modal-title" tabindex="-1">添加记录</h2><button class="icon-button" id="modal-close" aria-label="关闭"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="modal-body"></div></div></dialog>
+  <input type="file" id="gpt-json-file" accept=".json,.zip,application/json,application/zip" multiple hidden aria-label="选择 AI 分析结果 JSON 文件">
+  <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+  <div id="export-feedback" role="status" aria-live="polite" hidden></div>
+  <script src="/static/export-manager.js"></script>
+  <script src="/static/career-prompts.js"></script>
+  <script src="/static/ai-review.js"></script>
+  <script src="/static/analysis-workflows.js"></script>
+  <script src="/static/skill-gap.js"></script>
+  <script src="/static/listing-pagination.js"></script>
+  <script src="/static/job-dossier.js"></script>
+  <script src="/static/job-library.js"></script>
+  <script src="/static/analysis-result-state.js"></script>
+  <script src="/static/analysis-view.js"></script>
+  <script src="/static/home-search.js"></script>
+  <script src="/static/company-profile.js"></script>
+  <script src="/static/company-lists.js"></script>
+  <script src="/static/app.js"></script>
+  <script src="/static/career-workspace.js"></script>
+  <script src="/static/desktop-support.js"></script>
+  <script src="/static/capture.js"></script>
+  <script src="/static/planner.js"></script>
+  <script src="/static/gpt-import.js"></script>
+  <script src="/static/job-bulk.js"></script>
+  <script src="/static/capture-bulk.js"></script>
+  <script src="/static/boss-favorites.js"></script>
+</body>
+</html>

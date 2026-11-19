@@ -1,0 +1,80 @@
+/* Contextual bulk tools only; keep global typography/layout unchanged. */
+.job-select-cell{width:95px;max-width:110px;white-space:nowrap}
+.job-select-cell label{display:flex;align-items:center;gap:5px;cursor:pointer}
+.job-select-cell input{width:15px;height:15px;accent-color:var(--ink)}
+.job-bulk-bar{
+ display:flex;gap:10px;flex-wrap:wrap;align-items:end;
+ border:1px solid var(--line-accent);background:var(--accent-tint);border-radius:var(--radius-md);
+ padding:12px 15px;margin-bottom:13px
+}
+.job-bulk-bar>strong{align-self:center;margin-right:9px;white-space:nowrap}
+.job-bulk-bar label{display:flex;flex-direction:column;font-size: var(--fs-xs);gap:4px;color:var(--muted)}
+.job-bulk-bar select{min-width:135px;min-height:35px;padding:6px 9px}
+.job-list-pagination{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 3px;color:var(--muted);font-size: var(--fs-sm)}
+.capture-bulk-toolbar{
+ display:flex;align-items:center;flex-wrap:wrap;gap:10px;
+ padding:12px;margin:12px 0 0;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-md)
+}
+.capture-bulk-toolbar label{display:flex;align-items:center;gap:7px;cursor:pointer}
+.capture-bulk-toolbar input,.capture-bulk-choice input{width:15px;height:15px;accent-color:var(--ink)}
+.capture-result-row{position:relative;padding-left:38px}
+.capture-bulk-choice{position:absolute;top:18px;left:11px;z-index:1;cursor:pointer}
+.gpt-preview{max-height:65vh;overflow:auto}
+.gpt-preview .row-list{max-height:250px;overflow:auto}
+.gpt-preview .rowline{padding:7px 0}
+@media(max-width:1100px){
+ .top-actions{gap:7px}
+ .top-actions [data-gpt-choose]{padding:6px 9px}
+ .global-search{width:180px}
+}
+@media(max-width:760px){
+ .topbar{gap:5px}
+ .top-actions [data-gpt-choose]{font-size: var(--fs-xs);white-space:nowrap}
+ .job-bulk-bar label{min-width:0;flex:1 1 120px}
+ .job-bulk-bar select{width:100%;min-width:0}
+ .job-list-pagination{align-items:flex-start}
+}
+
+/* Read the saved JD before exposing the editable form. */
+.job-reading{display:grid;gap:12px}
+.job-reading[hidden],#job-edit-area[hidden]{display:none!important}
+.job-reading-actions{gap:8px;margin:4px 0 9px}
+.job-read-meta,.job-read-eligibility,.job-read-sources{font-size: var(--fs-sm);line-height:1.7;overflow-wrap:anywhere}
+.job-read-jd{margin:0;max-height:55vh;overflow-y:auto;white-space:pre-wrap;line-height:1.85}
+.job-read-sources{border-top:1px solid var(--line);padding-top:12px}
+.job-read-sources a{margin-right:10px}
+
+.req-sequence{display:grid;gap:12px}
+.req-sequence h3{margin:0;font-size: var(--fs-xl)}
+.req-sequence .notice{margin:0;line-height:1.7}
+.req-sequence .form-actions{flex-wrap:wrap}
+.req-seq-jd{max-height:40vh;overflow:auto;white-space:pre-wrap;margin:10px 0}
+
+.capture-intake-table{overflow:auto;margin-top:16px}
+.capture-intake-table table{min-width:760px;table-layout:fixed;width:100%}
+.capture-intake-table th:first-child{width:120px}
+.capture-intake-table th:nth-child(2){width:32%}
+.capture-intake-table th:last-child{width:23%}
+.capture-intake-table td{vertical-align:top;white-space:normal;overflow-wrap:anywhere}
+.capture-intake-table label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.capture-intake-table input{width:16px;height:16px;flex-shrink:0;accent-color:var(--ink)}
+.capture-intake-table tr:has([data-intake-select]:checked){background:var(--accent-soft)}
+.capture-intake-table .btn{display:block;margin-top:10px}
+.capture-intake-issue{color:var(--text);font-weight:600}
+.capture-intake-evidence{margin-top:12px;font-size: var(--fs-sm)}
+.capture-intake-evidence summary{cursor:pointer;color:var(--accent);padding:4px 0}
+.capture-intake-evidence p{line-height:1.6;margin:10px 0}
+.capture-intake-jd{font:inherit;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto;background:var(--bg);padding:10px;margin:0}
+#capture-intake-form>.form-actions{flex-wrap:wrap;gap:10px}
+#capture-intake-count{margin-right:auto;color:var(--muted)}
+@media(max-width:600px){
+ .capture-intake-table table{min-width:0}
+ .capture-intake-table thead{display:block}
+ .capture-intake-table thead tr{display:block}
+ .capture-intake-table th{display:none}
+ .capture-intake-table th:first-child{display:block;width:auto}
+ .capture-intake-table tbody,.capture-intake-table tbody tr{display:block}
+ .capture-intake-table tbody tr{padding:12px 0;border-top:1px solid var(--line)}
+ .capture-intake-table td{display:block;border:0;padding:6px 12px}
+ #capture-intake-count{flex-basis:100%}
+}

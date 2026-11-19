@@ -1,0 +1,911 @@
+{
+  "families": [
+    {
+      "id": "B01",
+      "route": "Agent / AI DevTools",
+      "name": "Agent 平台产品",
+      "priority": "P0",
+      "representative": "Agent 产品经理",
+      "aliases": [
+        "智能体产品经理",
+        "Agent 平台产品",
+        "智能体平台产品",
+        "AI Agent 产品实习生"
+      ],
+      "jd_features": [
+        "Agent 编排",
+        "Tool Calling",
+        "MCP",
+        "运行时",
+        "权限",
+        "Workflow",
+        "平台架构"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "B02",
+      "route": "Agent / AI DevTools",
+      "name": "AI Coding 产品",
+      "priority": "P0",
+      "representative": "AI Coding 产品",
+      "aliases": [
+        "Coding Agent 产品",
+        "AI 编程产品",
+        "代码智能体产品",
+        "研发智能体产品"
+      ],
+      "jd_features": [
+        "Coding Agent",
+        "代码库",
+        "IDE",
+        "CLI",
+        "代码生成",
+        "代码审查",
+        "开发效率"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "B03",
+      "route": "Agent / AI DevTools",
+      "name": "AI DevTools",
+      "priority": "P0",
+      "representative": "AI 开发者平台",
+      "aliases": [
+        "开发者工具产品",
+        "AI 开放平台",
+        "LLM 平台产品",
+        "AI 工具产品"
+      ],
+      "jd_features": [
+        "API",
+        "SDK",
+        "CLI",
+        "开发者体验",
+        "工具生态",
+        "接入与调试",
+        "日志"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "B04",
+      "route": "Agent / AI DevTools",
+      "name": "AI Product Builder",
+      "priority": "P0",
+      "representative": "AI 产品工程师",
+      "aliases": [
+        "Product Engineer",
+        "AI 产品技术",
+        "AI 原生产品",
+        "AI 产品研发实习生"
+      ],
+      "jd_features": [
+        "原型开发",
+        "Python",
+        "TypeScript",
+        "API",
+        "前后端",
+        "产品迭代",
+        "部署"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "B05",
+      "route": "Agent / AI DevTools",
+      "name": "Agent 应用工程",
+      "priority": "P0",
+      "representative": "Agent 开发实习生",
+      "aliases": [
+        "智能体开发实习生",
+        "AI 应用开发",
+        "大模型应用开发",
+        "LLM 应用工程"
+      ],
+      "jd_features": [
+        "RAG",
+        "Function Calling",
+        "LangGraph",
+        "Dify",
+        "工作流",
+        "数据库",
+        "接口集成"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "B06",
+      "route": "Agent / AI DevTools",
+      "name": "Agent 评测平台",
+      "priority": "P0",
+      "representative": "Agent 评测",
+      "aliases": [
+        "智能体评测",
+        "Agent Eval",
+        "Agent 质量",
+        "智能体测试"
+      ],
+      "jd_features": [
+        "Trajectory",
+        "任务成功率",
+        "自动评测",
+        "Benchmark",
+        "工具调用评估"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "C01",
+      "route": "Eval / Data Strategy",
+      "name": "大模型评测",
+      "priority": "P0",
+      "representative": "大模型评测实习生",
+      "aliases": [
+        "模型评估实习生",
+        "LLM Evaluation",
+        "模型效果评测",
+        "模型质量实习生"
+      ],
+      "jd_features": [
+        "Benchmark",
+        "评测集",
+        "错误归因",
+        "自动化评测",
+        "模型对比"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "C02",
+      "route": "Eval / Data Strategy",
+      "name": "模型行为与质量",
+      "priority": "P0",
+      "representative": "模型行为",
+      "aliases": [
+        "Model Behavior",
+        "模型能力评估",
+        "大模型质量策略",
+        "模型能力分析"
+      ],
+      "jd_features": [
+        "指令遵循",
+        "推理能力",
+        "幻觉",
+        "Bad Case",
+        "Model Quality",
+        "Failure Analysis"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "C03",
+      "route": "Eval / Data Strategy",
+      "name": "大模型数据策略",
+      "priority": "P0",
+      "representative": "大模型数据策略",
+      "aliases": [
+        "AI 数据策略",
+        "大模型数据产品",
+        "训练数据策略",
+        "模型数据产品"
+      ],
+      "jd_features": [
+        "SFT",
+        "RL 数据",
+        "合成数据",
+        "数据飞轮",
+        "数据质量",
+        "模型反馈"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "C04",
+      "route": "Eval / Data Strategy",
+      "name": "后训练邻近产品",
+      "priority": "P0",
+      "representative": "后训练产品",
+      "aliases": [
+        "Post-training",
+        "模型训练平台产品",
+        "模型优化产品",
+        "RL 数据策略"
+      ],
+      "jd_features": [
+        "SFT",
+        "DPO",
+        "GRPO",
+        "Reward",
+        "训练数据",
+        "评测闭环"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "C05",
+      "route": "Eval / Data Strategy",
+      "name": "NLP / 语言评测",
+      "priority": "P0",
+      "representative": "NLP 评测",
+      "aliases": [
+        "语言模型评测",
+        "中文大模型评测",
+        "语义评测",
+        "语音大模型评测"
+      ],
+      "jd_features": [
+        "语义理解",
+        "语言学",
+        "推理评测",
+        "中文能力",
+        "文本分析",
+        "评测设计"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "A01",
+      "route": "Enterprise AI",
+      "name": "企业 AI 产品",
+      "priority": "P1",
+      "representative": "企业AI产品",
+      "aliases": [
+        "ToB AI产品",
+        "AI产品经理",
+        "技术型AI产品",
+        "Enterprise AI"
+      ],
+      "jd_features": [
+        "企业数据",
+        "真实业务",
+        "权限",
+        "系统对接",
+        "上线效果"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "A02",
+      "route": "Enterprise AI",
+      "name": "MaaS / 大模型平台",
+      "priority": "P1",
+      "representative": "MaaS产品",
+      "aliases": [
+        "大模型平台产品",
+        "模型服务平台",
+        "推理服务产品"
+      ],
+      "jd_features": [
+        "模型接入",
+        "API 调用",
+        "推理服务",
+        "计费",
+        "配额",
+        "监控"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "A03",
+      "route": "Enterprise AI",
+      "name": "AI 数据平台",
+      "priority": "P1",
+      "representative": "AI数据平台",
+      "aliases": [
+        "AI数据产品",
+        "模型数据平台",
+        "数据治理产品"
+      ],
+      "jd_features": [
+        "Data Pipeline",
+        "数据质量",
+        "数据权限",
+        "模型训练数据"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "A04",
+      "route": "Enterprise AI",
+      "name": "企业工作流产品",
+      "priority": "P1",
+      "representative": "AI工作流产品",
+      "aliases": [
+        "Workflow产品",
+        "企业自动化",
+        "Agent工作流"
+      ],
+      "jd_features": [
+        "流程编排",
+        "业务自动化",
+        "系统集成",
+        "人工审批"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "A05",
+      "route": "Enterprise AI",
+      "name": "企业知识与搜索",
+      "priority": "P1",
+      "representative": "企业知识库",
+      "aliases": [
+        "知识助手",
+        "RAG产品",
+        "企业搜索"
+      ],
+      "jd_features": [
+        "知识检索",
+        "文档解析",
+        "权限隔离",
+        "搜索评测"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "A06",
+      "route": "Enterprise AI",
+      "name": "技术平台产品",
+      "priority": "P1",
+      "representative": "技术产品经理",
+      "aliases": [
+        "平台产品经理",
+        "研发平台产品",
+        "B端平台产品"
+      ],
+      "jd_features": [
+        "开发者",
+        "API",
+        "SDK",
+        "平台能力",
+        "技术需求"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "B07",
+      "route": "Agent / AI DevTools",
+      "name": "AI 搜索/知识智能",
+      "priority": "P1",
+      "representative": "AI搜索产品",
+      "aliases": [
+        "智能搜索",
+        "知识智能体",
+        "AI知识管理"
+      ],
+      "jd_features": [
+        "RAG",
+        "向量检索",
+        "重排",
+        "搜索质量"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "C06",
+      "route": "Eval / Data Strategy",
+      "name": "多模态评测",
+      "priority": "P1",
+      "representative": "多模态评测",
+      "aliases": [
+        "VLM评测",
+        "语音模型评测",
+        "视频理解评测"
+      ],
+      "jd_features": [
+        "Benchmark",
+        "多模态评测集",
+        "错误归因"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "C07",
+      "route": "Eval / Data Strategy",
+      "name": "Agent 数据策略",
+      "priority": "P1",
+      "representative": "Agent数据",
+      "aliases": [
+        "Agent轨迹",
+        "智能体数据策略",
+        "交互数据"
+      ],
+      "jd_features": [
+        "Trajectory",
+        "Tool-use 数据",
+        "RL 数据",
+        "数据质量"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "D01",
+      "route": "FDE / Applied AI",
+      "name": "FDE",
+      "priority": "P1",
+      "representative": "FDE实习",
+      "aliases": [
+        "前向部署工程师",
+        "前沿部署工程师",
+        "Forward Deployed Engineer"
+      ],
+      "jd_features": [
+        "客户场景",
+        "代码实现",
+        "PoC",
+        "系统部署",
+        "生产上线"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "D02",
+      "route": "FDE / Applied AI",
+      "name": "Applied AI",
+      "priority": "P1",
+      "representative": "Applied AI",
+      "aliases": [
+        "AI应用工程师",
+        "企业AI工程师",
+        "大模型应用工程师"
+      ],
+      "jd_features": [
+        "Python",
+        "Agent",
+        "RAG",
+        "API",
+        "生产系统"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "D03",
+      "route": "FDE / Applied AI",
+      "name": "AI 解决方案",
+      "priority": "P1",
+      "representative": "AI解决方案",
+      "aliases": [
+        "大模型解决方案",
+        "智能体解决方案",
+        "AI Solution"
+      ],
+      "jd_features": [
+        "业务需求",
+        "技术验证",
+        "系统集成",
+        "客户价值"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "D04",
+      "route": "FDE / Applied AI",
+      "name": "技术型 AI 交付",
+      "priority": "P1",
+      "representative": "AI交付工程师",
+      "aliases": [
+        "大模型交付",
+        "AI实施工程师",
+        "智能体交付"
+      ],
+      "jd_features": [
+        "接口联调",
+        "故障排查",
+        "上线",
+        "技术交付"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "E01",
+      "route": "Physical AI",
+      "name": "具身智能产品",
+      "priority": "P2",
+      "representative": "具身智能产品",
+      "aliases": [
+        "机器人AI产品",
+        "Physical AI产品",
+        "机器人产品经理"
+      ],
+      "jd_features": [
+        "VLA",
+        "机器人应用场景",
+        "产品开发"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "E02",
+      "route": "Physical AI",
+      "name": "机器人数据",
+      "priority": "P2",
+      "representative": "具身数据",
+      "aliases": [
+        "机器人数据策略",
+        "机器人训练数据",
+        "遥操作数据"
+      ],
+      "jd_features": [
+        "真机数据",
+        "数据质量",
+        "仿真数据",
+        "数据闭环"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "E03",
+      "route": "Physical AI",
+      "name": "Robot Eval",
+      "priority": "P2",
+      "representative": "具身智能评测",
+      "aliases": [
+        "机器人评测",
+        "Robot Eval",
+        "VLA评测"
+      ],
+      "jd_features": [
+        "任务成功率",
+        "仿真评测",
+        "Benchmark"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "E04",
+      "route": "Physical AI",
+      "name": "机器人部署",
+      "priority": "P2",
+      "representative": "机器人部署",
+      "aliases": [
+        "机器人交付",
+        "机器人解决方案",
+        "Robot Deployment"
+      ],
+      "jd_features": [
+        "真机调试",
+        "客户现场",
+        "部署反馈"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "X01",
+      "route": "高门槛方向观察",
+      "name": "AI 安全 / 治理",
+      "priority": "P2",
+      "representative": "Agent安全",
+      "aliases": [
+        "大模型安全",
+        "AI治理产品",
+        "智能体安全"
+      ],
+      "jd_features": [
+        "Prompt Injection",
+        "权限",
+        "审计",
+        "风险评测"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "X02",
+      "route": "高门槛方向观察",
+      "name": "推理服务产品",
+      "priority": "P2",
+      "representative": "大模型推理产品",
+      "aliases": [
+        "推理平台产品",
+        "模型部署产品",
+        "Inference产品"
+      ],
+      "jd_features": [
+        "API",
+        "推理成本",
+        "延迟",
+        "吞吐",
+        "配额"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "X04",
+      "route": "高门槛方向观察",
+      "name": "垂直行业 AI",
+      "priority": "P2",
+      "representative": "医疗AI产品",
+      "aliases": [
+        "法律AI产品",
+        "金融AI产品",
+        "行业智能体"
+      ],
+      "jd_features": [
+        "专业数据",
+        "行业系统",
+        "实际客户"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "X05",
+      "route": "高门槛方向观察",
+      "name": "AI 搜索策略",
+      "priority": "P2",
+      "representative": "AI搜索策略",
+      "aliases": [
+        "生成式搜索",
+        "搜索大模型产品",
+        "AI检索产品"
+      ],
+      "jd_features": [
+        "搜索质量",
+        "用户意图",
+        "NLP",
+        "在线评测"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "X06",
+      "route": "高门槛方向观察",
+      "name": "AI4S 评测",
+      "priority": "P2",
+      "representative": "AI4S评测",
+      "aliases": [
+        "科学数据评测",
+        "科研智能体",
+        "科学智能体评测"
+      ],
+      "jd_features": [
+        "跨学科",
+        "数据治理",
+        "Benchmark"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "D05",
+      "route": "FDE / Applied AI",
+      "name": "AI 技术咨询",
+      "priority": "P2",
+      "representative": "AI技术咨询",
+      "aliases": [
+        "AI数字化咨询",
+        "智能化转型",
+        "AI行业咨询"
+      ],
+      "jd_features": [
+        "PoC",
+        "业务分析",
+        "技术方案",
+        "ROI"
+      ],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "F01",
+      "route": "技术产品与风险对冲",
+      "name": "企业软件产品",
+      "priority": "P3",
+      "representative": "ToB产品经理",
+      "aliases": [
+        "企业软件产品",
+        "SaaS产品",
+        "业务平台产品"
+      ],
+      "jd_features": [],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "F02",
+      "route": "技术产品与风险对冲",
+      "name": "数据产品",
+      "priority": "P3",
+      "representative": "数据产品实习",
+      "aliases": [
+        "数据治理产品",
+        "数据中台",
+        "BI产品"
+      ],
+      "jd_features": [],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "F03",
+      "route": "技术产品与风险对冲",
+      "name": "非 AI DevTools",
+      "priority": "P3",
+      "representative": "开发者工具",
+      "aliases": [
+        "研发效能产品",
+        "技术平台产品",
+        "SDK产品"
+      ],
+      "jd_features": [],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "F04",
+      "route": "技术产品与风险对冲",
+      "name": "自动化业务产品",
+      "priority": "P3",
+      "representative": "流程自动化",
+      "aliases": [
+        "RPA产品",
+        "自动化平台",
+        "业务系统产品"
+      ],
+      "jd_features": [],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "E05",
+      "route": "Physical AI",
+      "name": "人机交互产品",
+      "priority": "P3",
+      "representative": "人机交互产品",
+      "aliases": [
+        "HRI产品",
+        "机器人交互",
+        "自然交互产品"
+      ],
+      "jd_features": [],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    },
+    {
+      "id": "X03",
+      "route": "高门槛方向观察",
+      "name": "AI Infra 产品",
+      "priority": "P3",
+      "representative": "AI Infra产品",
+      "aliases": [
+        "智算平台产品",
+        "算力平台产品",
+        "MLOps产品"
+      ],
+      "jd_features": [],
+      "qualification": [],
+      "risk": [],
+      "enabled": true
+    }
+  ],
+  "global_jd_features": [
+    "Python",
+    "TypeScript",
+    "API",
+    "SDK",
+    "Git",
+    "后端",
+    "数据库",
+    "部署",
+    "Docker",
+    "Tool Use",
+    "Function Calling",
+    "MCP",
+    "Workflow",
+    "Agent Orchestration",
+    "Sandbox",
+    "Benchmark",
+    "Eval",
+    "LLM-as-a-Judge",
+    "Bad Case",
+    "Trajectory",
+    "Regression Test",
+    "SFT",
+    "RLHF",
+    "Post-training",
+    "Synthetic Data",
+    "Data Pipeline",
+    "Data Flywheel",
+    "生产上线",
+    "线上监控",
+    "灰度发布",
+    "稳定性",
+    "故障排查",
+    "可观测性",
+    "真实客户",
+    "业务流程",
+    "系统集成",
+    "成本优化",
+    "ROI",
+    "任务成功率",
+    "开发者平台",
+    "模型服务",
+    "MaaS",
+    "推理服务",
+    "API Gateway",
+    "配额管理"
+  ],
+  "global_qualification": [
+    "明确仅社招全职、要求数年正式工作经验且不接受实习",
+    "毕业时间、学历、到岗要求确认不满足"
+  ],
+  "global_risk": [
+    "主要职责为人工标注、数据录入、内容搬运",
+    "电销、地推、渠道推广、纯销售拓客",
+    "主要负责竞品调研、PRD、基础运营",
+    "单纯搭建 Demo、编写 Prompt、配置模板",
+    "FDE 但主要做驻场实施或销售支持",
+    "Eval 但主要执行人工评分"
+  ]
+}

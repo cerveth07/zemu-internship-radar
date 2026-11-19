@@ -1,0 +1,34 @@
+{
+  "package_id": "00000000-0000-4000-8000-000000000001",
+  "requirements": [
+    {
+      "job_id": 1,
+      "requirement_type": "technical_skill",
+      "name": "Python",
+      "strength": "must",
+      "evidence": "熟练使用 Python 进行数据处理",
+      "source_field": "jd_text"
+    },
+    {
+      "job_id": 1,
+      "requirement_type": "technical_skill",
+      "name": "大模型应用框架",
+      "strength": "bonus",
+      "evidence": "熟悉 LangChain 或 LlamaIndex 者优先",
+      "source_field": "jd_text",
+      "option_logic": "any_of",
+      "alternatives": [
+        "LangChain",
+        "LlamaIndex"
+      ]
+    },
+    {
+      "job_id": 1,
+      "requirement_type": "internship_schedule",
+      "name": "每周到岗 4 天",
+      "strength": "must",
+      "evidence": "每周至少实习 4 天，持续 3 个月以上",
+      "source_field": "eligibility"
+    }
+  ]
+}

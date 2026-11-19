@@ -1,0 +1,18 @@
+{
+  "package_id": "00000000-0000-4000-8000-000000000001",
+  "requirements": [
+    {
+      "job_id": 1,
+      "requirement_type": "technical_skill",
+      "name": "编程语言",
+      "strength": "must",
+      "evidence": "熟悉至少一门编程语言",
+      "source_field": "jd_text",
+      "option_logic": "any_of",
+      "alternatives": [
+        "Python",
+        "Java"
+      ]
+    }
+  ]
+}

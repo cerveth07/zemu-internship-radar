@@ -1,0 +1,15 @@
+{
+  "package_id": "00000000-0000-4000-8000-000000000001",
+  "priorities": [
+    {
+      "job_id": 1,
+      "priority": "high",
+      "reason": "虚构优先级练习。"
+    },
+    {
+      "job_id": 2,
+      "priority": "skip",
+      "reason": "虚构优先级练习。"
+    }
+  ]
+}

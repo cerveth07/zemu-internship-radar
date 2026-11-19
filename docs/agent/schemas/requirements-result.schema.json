@@ -1,0 +1,113 @@
+{
+  "$defs": {
+    "RequirementIn": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 8,
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "evidence": {
+          "maxLength": 700,
+          "minLength": 1,
+          "title": "Evidence",
+          "type": "string"
+        },
+        "job_id": {
+          "exclusiveMinimum": 0,
+          "title": "Job Id",
+          "type": "integer"
+        },
+        "name": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "option_logic": {
+          "default": "single",
+          "enum": [
+            "single",
+            "any_of",
+            "all_of"
+          ],
+          "title": "Option Logic",
+          "type": "string"
+        },
+        "requirement_type": {
+          "enum": [
+            "technical_skill",
+            "product_skill",
+            "research_skill",
+            "education",
+            "graduation_year",
+            "internship_schedule",
+            "experience",
+            "responsibility",
+            "other"
+          ],
+          "title": "Requirement Type",
+          "type": "string"
+        },
+        "source_field": {
+          "enum": [
+            "jd_text",
+            "eligibility"
+          ],
+          "title": "Source Field",
+          "type": "string"
+        },
+        "strength": {
+          "enum": [
+            "must",
+            "bonus",
+            "mentioned",
+            "unknown"
+          ],
+          "title": "Strength",
+          "type": "string"
+        }
+      },
+      "required": [
+        "job_id",
+        "requirement_type",
+        "name",
+        "strength",
+        "evidence",
+        "source_field"
+      ],
+      "title": "RequirementIn",
+      "type": "object"
+    }
+  },
+  "$id": "https://github.com/cerveth07/ai-internship-radar/docs/agent/schemas/requirements-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "package_id": {
+      "maxLength": 36,
+      "minLength": 36,
+      "title": "Package Id",
+      "type": "string"
+    },
+    "requirements": {
+      "items": {
+        "$ref": "#/$defs/RequirementIn"
+      },
+      "maxItems": 800,
+      "minItems": 1,
+      "title": "Requirements",
+      "type": "array"
+    }
+  },
+  "required": [
+    "package_id",
+    "requirements"
+  ],
+  "title": "RequirementImport",
+  "type": "object"
+}

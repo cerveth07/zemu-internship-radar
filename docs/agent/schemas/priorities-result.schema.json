@@ -1,0 +1,56 @@
+{
+  "$id": "https://github.com/cerveth07/ai-internship-radar/docs/agent/schemas/priorities-result.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "package_id": {
+      "description": "原数据包的 package_id，逐字复制",
+      "maxLength": 36,
+      "minLength": 36,
+      "type": "string"
+    },
+    "priorities": {
+      "items": {
+        "properties": {
+          "job_id": {
+            "exclusiveMinimum": 0,
+            "title": "Job Id",
+            "type": "integer"
+          },
+          "priority": {
+            "enum": [
+              "unrated",
+              "high",
+              "medium",
+              "low",
+              "skip"
+            ],
+            "title": "Priority",
+            "type": "string"
+          },
+          "reason": {
+            "default": "",
+            "maxLength": 1000,
+            "title": "Reason",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id",
+          "priority"
+        ],
+        "title": "PriorityResultRow",
+        "type": "object"
+      },
+      "maxItems": 1000,
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "package_id",
+    "priorities"
+  ],
+  "title": "PriorityResult",
+  "type": "object"
+}

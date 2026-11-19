@@ -1,0 +1,150 @@
+/* Skill demand and self-assessment, reusing existing desktop panel tokens. */
+/* .filter-bar normally flexes direct .search/.select children. Within vertical
+   labels those flex-bases become HEIGHTS; reset both axes explicitly. */
+.gap-filter-bar{
+  display:grid;
+  grid-template-columns:minmax(195px,1.5fr) minmax(145px,1fr) minmax(135px,.9fr) minmax(195px,1.3fr) max-content max-content;
+  align-items:end;
+  gap:12px;
+  padding:0 0 var(--space-4);
+  margin-bottom:12px;
+}
+.gap-filter-bar > label:not(.gap-candidate-toggle){
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  min-width:0;
+  font-size: var(--fs-sm);
+  line-height:1.5;
+  color:var(--muted);
+}
+.gap-filter-bar > label > .select,
+.gap-filter-bar > label > .search{
+  display:block;
+  flex:none;
+  min-width:0;
+  width:100%;
+  height:38px;
+  min-height:38px;
+  max-height:38px;
+  line-height:1.4;
+}
+.gap-filter-bar .gap-candidate-toggle{
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+  gap:7px;
+  min-height:38px;
+  white-space:nowrap;
+  font-size: var(--fs-sm);
+  color:var(--muted);
+  cursor:pointer;
+}
+.gap-filter-bar .gap-candidate-toggle input{
+  flex:none;
+  width:15px;
+  height:15px;
+  margin:0;
+  accent-color:var(--ink);
+}
+.gap-filter-bar > .company-size-filter{grid-column:span 2;max-width:none}
+.gap-filter-bar > .btn{
+  min-height:38px;
+  white-space:nowrap;
+}
+.gap-metrics.stats{padding:13px 0;margin-bottom:12px}
+.gap-metrics .stat-number{font-size: var(--fs-2xl);margin:4px 0}
+.gap-help{
+  margin:0 0 12px;
+  padding:var(--space-1) 0 var(--space-1) 14px;
+  background:transparent;
+  border:0;
+  border-left:3px solid var(--line-strong);
+  border-radius:0;
+  color:var(--muted);
+  font-size: var(--fs-sm);
+}
+.gap-help summary{cursor:pointer;line-height:1.55}
+.gap-help p{margin:8px 0 2px;line-height:1.7;max-width:100ch}
+.gap-import-button{cursor:pointer}
+.gap-list{padding-bottom:8px}
+.gap-list > .page-toolbar{flex-wrap:wrap;gap:10px}
+.gap-list-tools{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:14px}
+.gap-hide-learning{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size: var(--fs-sm);color:var(--text-secondary);cursor:pointer}
+.gap-hide-learning input{width:15px;height:15px;margin:0;accent-color:var(--ink)}
+
+.gap-item{border-top:1px solid var(--border)}
+.gap-row{display:grid;grid-template-columns:minmax(145px,200px) minmax(85px,1fr) 60px minmax(325px,auto) 60px;align-items:center;gap:10px;padding:13px 0}
+.gap-name{text-align:left;overflow-wrap:anywhere}
+.gap-name small{color:var(--text-muted);font-size: var(--fs-xs);font-weight:400}
+.gap-provisional .bar-fill{background:var(--muted-2)}
+.gap-meter .bar-track{height:7px}
+.gap-count{text-align:right;color:var(--text-muted);font-size: var(--fs-sm);white-space:nowrap}
+.gap-row-actions{display:flex;align-items:center;gap:7px;min-width:0}
+.gap-row-actions .btn{flex-shrink:0}
+.gap-mark-met{min-width:76px;white-space:nowrap}
+.gap-is-met{border-color:var(--accent);background:var(--bg-secondary);font-weight:600}
+.gap-row-actions .gap-status{flex:1;min-width:96px;max-width:125px;font-size: var(--fs-sm)}
+.gap-status{width:100%;min-width:0;font-size: var(--fs-sm)}
+.gap-quick-learn{min-width:105px;font-size: var(--fs-xs);white-space:nowrap;min-height:34px;padding:5px 8px}
+.gap-learning-added{color:var(--text-secondary);background:var(--bg-secondary);border-color:var(--line)}
+.gap-details{background:var(--bg-secondary);border-radius:var(--radius-md);padding:14px 18px 18px;margin-bottom:12px}
+.gap-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px;color:var(--text-secondary);font-size: var(--fs-sm)}
+.gap-source{font-size: var(--fs-xs);padding:3px 7px;border:1px solid var(--border);border-radius:var(--radius-sm)}
+.gap-detail-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:22px;margin-top:10px}
+.gap-detail-grid>div{min-width:0}
+.gap-detail-grid h4{margin:16px 0 9px}
+.gap-claim{border-bottom:1px solid var(--border);padding:8px 0}
+.gap-claim p{overflow-wrap:anywhere;margin:7px 0;font-size: var(--fs-base);line-height:1.5}
+.gap-linked{padding:8px 0;border-bottom:1px solid var(--border);overflow-wrap:anywhere}
+.gap-import-panel{margin-bottom:18px}
+.gap-pagination{
+  border-top:1px solid var(--line);
+  margin-top:6px;
+  padding:16px 0 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.gap-page-summary,.gap-page-current{font-size: var(--fs-sm);color:var(--muted);white-space:nowrap}
+.gap-page-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.gap-page-jump{display:flex;align-items:center;gap:6px;margin:0;font-size: var(--fs-sm);color:var(--muted)}
+.gap-page-jump input{
+  width:64px;height:30px;min-width:0;
+  border:1px solid var(--line-strong);border-radius:var(--radius-sm);
+  padding:4px 7px;background:var(--surface);color:var(--text);
+  text-align:center;font-variant-numeric:tabular-nums;
+}
+.gap-page-jump input:focus{border-color:var(--accent);outline:2px solid var(--line-accent);outline-offset:1px}
+@media(max-width:1400px){
+  .gap-filter-bar{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .gap-filter-bar .gap-candidate-toggle{align-self:end;}
+  .gap-filter-bar > .btn{justify-self:start;}
+}
+@media(max-width:980px){
+  .gap-filter-bar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gap-row{grid-template-columns:110px minmax(60px,1fr) 42px minmax(270px,auto) 55px;gap:7px}
+  .gap-row-actions{flex-wrap:wrap;gap:5px}
+  .gap-detail-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .gap-filter-bar{grid-template-columns:1fr;padding:13px}
+  .gap-filter-bar > .company-size-filter{grid-column:1/-1}
+  .gap-pagination{align-items:flex-start;flex-direction:column}
+  .gap-page-controls{gap:7px}
+  .gap-filter-bar > .btn{justify-self:stretch}
+  .gap-metrics.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gap-metrics .stat-card:nth-child(2){border-right:0}
+  .gap-row{grid-template-columns:minmax(85px,1fr) 55px 66px;gap:8px}
+  .gap-meter{display:none}
+  .gap-expand{grid-column:3;justify-self:end}
+  .gap-count{grid-column:2}
+  .gap-name{grid-column:1;grid-row:1}
+  .gap-expand{grid-column:3;grid-row:1}
+  .gap-row-actions{grid-column:1/-1;grid-row:2;flex-wrap:wrap;gap:7px}
+  .gap-row-actions .gap-status{flex:1 1 98px;max-width:150px}
+  .gap-row-actions .gap-quick-learn{min-width:108px}
+}

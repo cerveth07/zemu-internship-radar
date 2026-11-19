@@ -1,0 +1,389 @@
+[
+  {
+    "distribution": "altgraph",
+    "version": "0.17.5",
+    "wheel_notices": [
+      "altgraph/LICENSE"
+    ]
+  },
+  {
+    "distribution": "annotated-doc",
+    "version": "0.0.6",
+    "wheel_notices": [
+      "annotated-doc/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "annotated-types",
+    "version": "0.8.0",
+    "wheel_notices": [
+      "annotated-types/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "anyio",
+    "version": "4.16.0",
+    "wheel_notices": [
+      "anyio/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "bottle",
+    "version": "0.13.4",
+    "wheel_notices": [
+      "bottle/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "certifi",
+    "version": "2026.10.23",
+    "wheel_notices": [
+      "certifi/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "cffi",
+    "version": "2.1.1",
+    "wheel_notices": [
+      "cffi/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "charset-normalizer",
+    "version": "3.5.2",
+    "wheel_notices": [
+      "charset-normalizer/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "click",
+    "version": "8.5.1",
+    "wheel_notices": [
+      "click/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "clr_loader",
+    "version": "0.3.1",
+    "wheel_notices": [
+      "clr_loader/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "colorama",
+    "version": "0.4.6",
+    "wheel_notices": [
+      "colorama/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "colorlog",
+    "version": "6.12.0",
+    "wheel_notices": [
+      "colorlog/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "fastapi",
+    "version": "0.163.2",
+    "wheel_notices": [
+      "fastapi/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "flatbuffers",
+    "version": "25.12.19",
+    "wheel_notices": []
+  },
+  {
+    "distribution": "h11",
+    "version": "0.16.0",
+    "wheel_notices": [
+      "h11/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "httpcore",
+    "version": "1.0.9",
+    "wheel_notices": [
+      "httpcore/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "distribution": "httpx",
+    "version": "0.28.1",
+    "wheel_notices": [
+      "httpx/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "distribution": "idna",
+    "version": "3.20",
+    "wheel_notices": [
+      "idna/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "distribution": "iniconfig",
+    "version": "2.3.1",
+    "wheel_notices": [
+      "iniconfig/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "numpy",
+    "version": "2.5.5",
+    "wheel_notices": [
+      "numpy/licenses/LICENSE.txt",
+      "numpy/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "numpy/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "numpy/licenses/numpy/_core/src/highway/LICENSE",
+      "numpy/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "numpy/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "numpy/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "numpy/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "numpy/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "numpy/licenses/numpy/ma/LICENSE",
+      "numpy/licenses/numpy/random/LICENSE.md",
+      "numpy/licenses/numpy/random/src/distributions/LICENSE.md",
+      "numpy/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "numpy/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "numpy/licenses/numpy/random/src/philox/LICENSE.md",
+      "numpy/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "numpy/licenses/numpy/random/src/splitmix64/LICENSE.md"
+    ]
+  },
+  {
+    "distribution": "omegaconf",
+    "version": "2.4.0",
+    "wheel_notices": [
+      "omegaconf/licenses/ATTRIBUTION/LICENSE-antlr4",
+      "omegaconf/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "onnxruntime",
+    "version": "1.32.0",
+    "wheel_notices": []
+  },
+  {
+    "distribution": "opencv-python-headless",
+    "version": "5.1.0.95",
+    "wheel_notices": [
+      "opencv-python-headless/LICENSE-3RD-PARTY.txt",
+      "opencv-python-headless/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "opentelemetry-api",
+    "version": "1.45.2",
+    "wheel_notices": [
+      "opentelemetry-api/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "packaging",
+    "version": "26.3",
+    "wheel_notices": [
+      "packaging/licenses/LICENSE",
+      "packaging/licenses/LICENSE.APACHE",
+      "packaging/licenses/LICENSE.BSD"
+    ]
+  },
+  {
+    "distribution": "pefile",
+    "version": "2024.8.26",
+    "wheel_notices": [
+      "pefile/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pillow",
+    "version": "13.0.0",
+    "wheel_notices": [
+      "pillow/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pluggy",
+    "version": "1.7.0",
+    "wheel_notices": [
+      "pluggy/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "protobuf",
+    "version": "7.36.2",
+    "wheel_notices": [
+      "protobuf/LICENSE"
+    ]
+  },
+  {
+    "distribution": "proxy_tools",
+    "version": "0.1.0",
+    "wheel_notices": []
+  },
+  {
+    "distribution": "pyclipper",
+    "version": "1.4.0",
+    "wheel_notices": [
+      "pyclipper/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pycparser",
+    "version": "3.12",
+    "wheel_notices": [
+      "pycparser/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pydantic",
+    "version": "2.14.3",
+    "wheel_notices": [
+      "pydantic/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pydantic_core",
+    "version": "2.50.4",
+    "wheel_notices": [
+      "pydantic_core/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "Pygments",
+    "version": "2.21.0",
+    "wheel_notices": [
+      "Pygments/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pyinstaller",
+    "version": "6.22.3",
+    "wheel_notices": [
+      "pyinstaller/licenses/COPYING.txt"
+    ]
+  },
+  {
+    "distribution": "pyinstaller-hooks-contrib",
+    "version": "2026.10",
+    "wheel_notices": [
+      "pyinstaller-hooks-contrib/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pytest",
+    "version": "9.2.0",
+    "wheel_notices": [
+      "pytest/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pythonnet",
+    "version": "3.2.1",
+    "wheel_notices": [
+      "pythonnet/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pywebview",
+    "version": "6.2.1",
+    "wheel_notices": [
+      "pywebview/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pywin32-ctypes",
+    "version": "0.2.3",
+    "wheel_notices": [
+      "pywin32-ctypes/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "PyYAML",
+    "version": "6.0.3",
+    "wheel_notices": [
+      "PyYAML/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "rapidocr",
+    "version": "3.10.0",
+    "wheel_notices": [
+      "rapidocr/licenses/LICENSE",
+      "rapidocr/licenses/MODEL_LICENSES.md"
+    ]
+  },
+  {
+    "distribution": "requests",
+    "version": "2.34.2",
+    "wheel_notices": [
+      "requests/licenses/LICENSE",
+      "requests/licenses/NOTICE"
+    ]
+  },
+  {
+    "distribution": "setuptools",
+    "version": "84.2.1",
+    "wheel_notices": [
+      "setuptools/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "shapely",
+    "version": "2.2.0",
+    "wheel_notices": [
+      "shapely/licenses/LICENSE.txt",
+      "shapely/licenses/LICENSE_GEOS",
+      "shapely/licenses/LICENSE_win32"
+    ]
+  },
+  {
+    "distribution": "six",
+    "version": "1.17.0",
+    "wheel_notices": [
+      "six/LICENSE"
+    ]
+  },
+  {
+    "distribution": "starlette",
+    "version": "1.10.0",
+    "wheel_notices": [
+      "starlette/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "distribution": "tqdm",
+    "version": "4.70.1",
+    "wheel_notices": []
+  },
+  {
+    "distribution": "typing-inspection",
+    "version": "0.4.5",
+    "wheel_notices": [
+      "typing-inspection/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "typing_extensions",
+    "version": "4.16.0",
+    "wheel_notices": [
+      "typing_extensions/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "urllib3",
+    "version": "2.8.0",
+    "wheel_notices": [
+      "urllib3/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "uvicorn",
+    "version": "0.54.0",
+    "wheel_notices": [
+      "uvicorn/licenses/LICENSE.md"
+    ]
+  }
+]
