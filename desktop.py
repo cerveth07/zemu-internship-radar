@@ -421,14 +421,17 @@ def self_test(output: Path, *, require_ocr: bool = False) -> int:
                 report['optional_connector'] = True
             finally:
                 shutil.rmtree(Path(response.path).parent)
-        if require_ocr or getattr(sys, 'frozen', False):
+        from app import ocr_adapter
+        on_demand = bool(ocr_adapter.ocr_component.manifest())
+        if on_demand:
+            report['ocr'] = 'installed' if ocr_adapter.is_available() else 'on-demand'
+        if require_ocr or (getattr(sys, 'frozen', False) and not on_demand):
             # The packaged app must prove it contains both the OCR runtime and
             # the Chinese models; importability alone does not prove this.
-            from app import ocr_adapter
             sample = bundled_root() / 'assets' / 'ocr-smoke.b64'
             if not sample.is_file():
                 raise FileNotFoundError('打包后缺少中文 OCR 检查图')
-            if not ocr_adapter.is_available():
+            if not on_demand and not ocr_adapter.is_available():
                 raise RuntimeError('RapidOCR 或 ONNX Runtime 未包含在 EXE 中')
             recognized = ocr_adapter.smoke_check(sample)
             report['ocr'] = 'passed'

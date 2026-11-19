@@ -71,7 +71,7 @@ async function main(){
   const job=await post('/jobs',{company_id:company.id,title:'档案收藏测试实习',city:'北京',jd_text:'测试用岗位描述',source_platform:'boss',source_url:'https://www.zhipin.com/job_detail/dossierfixture.html'});
   await page.reload();await page.locator('nav .nav-item[data-page=jobs]').click();await page.locator('[data-job="'+job.id+'"]').first().click();
   await page.locator('[data-boss-favorite=job]').click();await page.getByText(/本次操作已收藏/).waitFor();
-  assert.equal(await page.locator('#modal').isVisible(),false);
+  await page.locator('#modal').waitFor({state:'hidden'});
   await page.locator('[data-boss-favorite=back]').click();await page.locator('#modal').waitFor();
   assert.match(await page.locator('#modal').textContent(),/档案收藏测试实习/);
   assert.deepEqual(errors,[]);assert.deepEqual(external,[]);

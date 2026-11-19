@@ -6,13 +6,18 @@
 
 ## 下载并安装 Windows 版
 
-**[下载择木 v1.0 安装程序（Windows x64）](https://github.com/cerveth07/zemu-internship-radar/releases/download/v1.0/Zemu-v1.0-Windows-x64-Setup.exe)**
+两个版本都能采集 BOSS 直聘和实习僧的岗位，也都能把岗位收藏到自己的 BOSS 账号。选哪个，主要看你是否常用截图识字（OCR）。
 
-1. 下载并双击 `Zemu-v1.0-Windows-x64-Setup.exe`，按提示安装。安装程序会为当前 Windows 用户创建开始菜单快捷方式。
-2. 安装完成后，在开始菜单搜索 **择木** 并打开。桌面版已包含 Python、Node.js 和中文截图识别组件。
+| 你怎么用 | 下载哪个 | 截图识字 |
+| --- | --- | --- |
+| 主要搜岗位、收藏或跟踪投递，偶尔才用截图 | [轻量版 · 42.7 MiB](https://github.com/cerveth07/zemu-internship-radar/releases/download/v1.0/Zemu-v1.0-Windows-x64-Lite-Setup.exe) | 第一次识别截图时自动从 GitHub 下载约 108 MiB 的组件。下载一次，以后断网也能识别。 |
+| 经常从截图录入岗位，或希望安装好就能离线识字 | [完整版 · 115.0 MiB](https://github.com/cerveth07/zemu-internship-radar/releases/download/v1.0/Zemu-v1.0-Windows-x64-Setup.exe) | 安装包已含识别组件，首次使用即可离线识别。 |
+
+1. 选上表中的一个安装包，下载后双击，按提示安装。
+2. 在 Windows 开始菜单打开 **择木轻量版** 或 **择木**。两个版本共用这台电脑上当前用户的岗位和投递记录。
 3. 第一次打开，可以直接点击 **「体验示例（加入 3 个示例岗位）」**，先用虚构资料熟悉工作台。
 
-安装程序尚未做代码签名。需要核对文件时，可将下载文件的 SHA-256 与 [v1.0 发布页](https://github.com/cerveth07/zemu-internship-radar/releases/tag/v1.0) 的值比较。
+轻量版第一次只提交截图，或点「重新 OCR 识别截图」时，会下载组件。截图始终留在本机。下载中断时，原图仍在采集收件箱里，恢复网络后打开这条记录，点「重新 OCR 识别截图」即可重试。两个安装包均未做代码签名，文件的 SHA-256 见 [v1.0 发布页](https://github.com/cerveth07/zemu-internship-radar/releases/tag/v1.0)。
 
 适用于 64 位 Windows 10 和 11。如果打开时提示缺少 WebView2 或 Visual C++ 运行库，请安装对应的微软官方组件，再打开择木。[WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) · [Visual C++ x64 运行库](https://aka.ms/vc14/vc_redist.x64.exe)
 
@@ -48,7 +53,7 @@ npm.cmd ci --prefix tools/shixiseng-node --ignore-scripts
 
 - 已经有岗位表？在「数据与帮助」下载示例 CSV，照着填两行，导入时先预览再确认。CSV 是 Excel 等表格软件可以打开的一种文件。
 - 想比较岗位要求？在「AI 分析」选好要分析的岗位，再把导出的材料交给你选的 AI 助手。拿到结果后，可以回到择木预览并导入。发出前看一眼材料里包含哪些个人信息。[AI 分析使用说明](docs/agent-handoff.md)
-- 只有招聘截图？桌面版自带中文文字识别（OCR），可直接从图片读取文字。使用源码版时，可先运行启动脚本，再在源码目录的终端执行下面两行，完成后重启择木。
+- 只有招聘截图？在采集收件箱添加截图，择木可以把图片里的文字填成草稿，核对后再收录。使用源码版时，可先运行启动脚本，再在源码目录的终端执行下面两行，完成后重启择木。
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -c constraints-windows.txt -r requirements-ocr.txt
@@ -63,6 +68,6 @@ npm.cmd ci --prefix tools/shixiseng-node --ignore-scripts
 
 如果窗口一闪就关，在这个文件夹的空白处右击，选择「在终端中打开」，输入 `.\start-windows.bat`。这样可以看清报错。如果提示找不到 `py` 或 Python 3.12，先完成第 1 步。
 
-开发者可查看[本地接口与 MCP](docs/agent-api.md)、[数据库导出工具](tools/export_collected_data.py)或[贡献指南](CONTRIBUTING.md)。BOSS 城市映射收录 336 项，含「全国」。[城市覆盖和来源](docs/boss-city-mapping.md)
+开发者可查看[本地接口与 MCP](docs/agent-api.md)、[数据库导出工具](tools/export_collected_data.py)、[轻量版构建说明](packaging/README.md)或[贡献指南](CONTRIBUTING.md)。BOSS 城市映射收录 336 项，含「全国」。[城市覆盖和来源](docs/boss-city-mapping.md)
 
 项目自有源码、文档、品牌图形和合成样例采用 MIT 许可证，署名 **cerveth07**。依赖和第三方材料各自适用随附许可。[MIT 许可证](LICENSE) · [第三方材料说明](LICENSE-STATUS.md) · [社区行为准则](CODE_OF_CONDUCT.md)

@@ -266,6 +266,21 @@ async function saveCaptureDraft(){
   await closeModal(true);
  }catch(error){showFormError(form,error)}finally{endFormWrite(form)}
 }
+async function readCaptureScreenshot(id, control){
+ const original=control?.textContent,wasDisabled=control?.disabled;
+ if(control){control.disabled=true;control.textContent='正在识别截图…'}
+ try{
+  const status=await api('/capture/ocr/status');
+  if(status.on_demand&&!status.installed){
+   const label='首次使用，正在下载文字识别组件（约 '+Math.ceil(status.download_bytes/1048576)+' MiB）…';
+   if(control)control.textContent=label;
+   toast(label);
+  }
+  return await api(`/capture/items/${id}/ocr`,{method:'POST'});
+ }finally{
+  if(control){control.textContent=original;control.disabled=wasDisabled}
+ }
+}
 async function recordCapture(event){
  event.preventDefault();const f=event.target,submittedBatch=state.captureSelected,startAfterCreate=f.dataset.startAfterCreate==='1';if(!beginFormWrite(f))return;
  try{
@@ -287,19 +302,20 @@ async function recordCapture(event){
    if(!data.raw_text.trim()&&!data.source_url.trim()&&!file)throw new Error('请提供文字、链接或截图');
    if(file && file.size>6*1024*1024)throw new Error('图片不能超过 6MB');
    const created=await api(`/capture/batches/${submittedBatch}/items`,{method:'POST',body:JSON.stringify(data)});
+   let intakeMessage=created.already_exists?'已存在相同原始资料，不重复新增':'已加入本地采集收件箱';
    if(file&&!created.already_exists){
      const response=await fetch(`/api/capture/items/${created.id}/screenshot`,{method:'POST',headers:{'Content-Type':file.type||'application/octet-stream'},body:file});
      if(!response.ok)throw new Error('文字已保存，但截图上传失败；记录 #'+created.id+' 可重新检查');
      // OCR automatically after a screenshot-only intake. Never automatically commit.
      if(!data.raw_text.trim()){
        try{
-         const result=await api(`/capture/items/${created.id}/ocr`,{method:'POST'});
+         const result=await readCaptureScreenshot(created.id,f.querySelector('button[type=submit]'));
          if(result.text)await api(`/capture/items/${created.id}`,{method:'PATCH',body:JSON.stringify({jd_text:result.text})});
-         toast(result.text?'OCR 已写入待核对草稿，须检查全部段落':'OCR 没有识别到文字；需人工补录');
-       }catch(err){toast('截图已保存；OCR 未运行：'+err.message)}
+         intakeMessage=result.text?'OCR 已写入待核对草稿，须检查全部段落':'截图已保存，OCR 没有识别到文字，请人工补录';
+       }catch(err){intakeMessage='截图已保存，可在人工核对时重新识别。'+err.message}
      }
    }
-   if(state.captureSelected===submittedBatch){state.captureHistory=true;if(state.captureManualDrafts)delete state.captureManualDrafts[submittedBatch];if(state.captureManualFiles)delete state.captureManualFiles[submittedBatch];}await refreshSavedCapture(created.already_exists?'已存在相同原始资料，不重复新增':'已加入本地采集收件箱');
+   if(state.captureSelected===submittedBatch){state.captureHistory=true;if(state.captureManualDrafts)delete state.captureManualDrafts[submittedBatch];if(state.captureManualFiles)delete state.captureManualFiles[submittedBatch];}await refreshSavedCapture(intakeMessage);
   }else if(f.id==='capture-workbench-form'){
    if(!state.captureSelected)throw new Error('请先建立批次');
    const result=await api(`/capture/batches/${submittedBatch}/workbench-text`,{method:'POST',body:JSON.stringify({text:f.querySelector('[name=text]').value})});
@@ -347,7 +363,7 @@ document.addEventListener('click',async e=>{
  const ocr=e.target.closest('[data-capture-ocr]');if(ocr){
   const id=Number(ocr.dataset.captureOcr),area=$('#capture-review-form [name=jd_text]');
   if(area?.value.trim() && !confirm('将 OCR 识别内容替换当前未保存的 JD 草稿？'))return;
-  try{const r=await api(`/capture/items/${id}/ocr`,{method:'POST'});if(!r.text)throw new Error('截图没有识别出文字');
+  try{const r=await readCaptureScreenshot(id,ocr);if(!r.text)throw new Error('截图没有识别出文字');
    area.value=r.text;toast('已填入识别文本，仍须人工核对后提交');}catch(err){toast('OCR 失败：'+err.message)}return;
  }
  const bh=e.target.closest('[data-bh-status],[data-bh-collect],[data-bh-hydrate],[data-bh-import],[data-bh-reset],[data-bh-sync-run],[data-bh-stop],[data-bh-resume],[data-bh-resolve]');if(bh){

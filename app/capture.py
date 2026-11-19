@@ -683,13 +683,15 @@ def _enqueue_from_adapter(conn, batch_id: int, candidate: dict) -> bool:
 
 @router.get('/ocr/status')
 def ocr_status():
+    spec = ocr_adapter.ocr_component.manifest()
     return {'provider': 'rapidocr', 'installed': ocr_adapter.is_available(),
+            'on_demand': bool(spec), 'download_bytes': spec['bytes'] if spec else 0,
             'local_only': True, 'review_required': True}
 
 
 @router.post('/items/{item_id}/ocr')
 def ocr_screenshot(item_id: int):
-    if not ocr_adapter.is_available():
+    if not ocr_adapter.ocr_component.manifest() and not ocr_adapter.is_available():
         raise HTTPException(503, '未安装 RapidOCR；请安装 requirements-ocr.txt')
     with connect() as conn:
         row = _item(conn, item_id)
@@ -703,6 +705,8 @@ def ocr_screenshot(item_id: int):
         raise HTTPException(404, '截图已不存在')
     try:
         result = ocr_adapter.recognize_file(path)
+    except ocr_adapter.ocr_component.ComponentError as exc:
+        raise HTTPException(503, str(exc)) from exc
     except Exception as exc:
         raise HTTPException(502, 'OCR 识别失败，请检查图片或人工录入') from exc
     # Deliberately no database mutation: OCR text is a candidate to review.

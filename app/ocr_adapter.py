@@ -8,9 +8,12 @@ from functools import lru_cache
 from pathlib import Path
 import importlib.util
 from numbers import Number
+from . import ocr_component
 
 
 def is_available() -> bool:
+    if spec := ocr_component.manifest():
+        return ocr_component.installed(spec)
     return importlib.util.find_spec('rapidocr') is not None and importlib.util.find_spec('onnxruntime') is not None
 
 
@@ -21,6 +24,8 @@ def _engine():
 
 
 def recognize_file(path: Path) -> dict:
+    if spec := ocr_component.manifest():
+        return ocr_component.recognize(path, spec)
     result = _engine()(str(path))
     txts = getattr(result, 'txts', None)
     scores = getattr(result, 'scores', None)
